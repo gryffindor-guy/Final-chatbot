@@ -1,0 +1,3 @@
+{"name": "gryffindor_guy", "email": "emo@gmail.com", "password": "emo"}
+{"name": "gryffindor", "email": "19pa1a05b3@vishnu.edu.in", "password": "emo"}
+{"name": "zarvis", "email": "hemanthbabu6041@gmail.com", "password": "123"}
