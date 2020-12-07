@@ -1,0 +1,116 @@
+body{
+	background-color: black;
+	background-image: url("http://www.femifesto.ca/wp-content/uploads/2015/01/parallax-3.jpg");
+	color:white;
+	font-family: 'Roboto', sans-serif;
+	background-position: relative;
+}
+.intro{
+	margin-left: 100px;
+	word-spacing: 1px;
+	margin-top: 150px;
+}
+.intro-image{
+	align-content: right;
+	margin-top: -26%;
+	background: transparent;
+	border: 1px solid black;
+	margin-left: 800px;
+	height: 550px;
+	width: 400px;
+}
+/*.intro-image:hover{
+	backface-visibility: pink;
+}*/
+/*.one{			
+	margin-top: -250px;
+}*/
+.menu{
+	width: 150px;
+	color:green;
+	padding:10px 40px 10px 40px;
+	border: 2px solid black;
+	float: left;
+	font-size: 12px;
+	margin: 10px;
+	background:transparent;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	/*margin-top: -60px;*/
+	cursor: pointer;
+}
+.menu:hover{
+			background-color: cyan;
+}
+.fonty{
+	font-family: 'Roboto', sans-serif; 
+}
+/*.menu_design{
+	width: 150px;
+	color:green;
+	padding:10px 40px 10px 40px;
+	border: 2px solid black;
+	float: right;
+	background:transparent;
+	transition-property: background-color;
+	transition-duration: 1s;
+	margin-top: -60px;
+	cursor: pointer;
+}*/
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: transparent;
+  color: blue;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.menu_design:hover{
+	background-color: lightgreen;
+}
+#anim{
+	color:#1778F2;
+	animation-name: cchange;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+@keyframes cchange{
+	0%{color:#236475;}
+	10%{color:#F7F5FA;}
+	30%{color:white;}
+	50%{color:#236475;}
+	70%{color:orange;}
+	100%{color:yellow;}
+}
+/*#one{
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50px;
+    cursor:pointer;
+}
+#two{
+    height: 28px;
+    width: 30px;
+    margin-top:11px;
+    margin-left:15px;
+    padding-top:10px;
+    background-color: white;
+    border-radius: 50%;*/

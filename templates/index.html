@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<!--GOOGLE FONTS-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/index_css.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/popup.css') }}">
+	<title> Chatbot </title>
+</head>
+<body>
+	<div class="header" id="myHeader">
+		<!-- <p>This is a Sticky Header</p> -->
+		<a href={{url_for('static', filename = 'additional_files/calculator.html')}}><button class="menu">HOME</button></a>
+		<a href=""><button class="menu">BOOKS</button></a>
+		<a href=""><button class="menu">MUSIC</button></a>
+		<a href=""><button class="menu">CALCULATION</button></a>
+	</div>
+	<!-- <div class="content">
+		<h3>On Scroll Sticky Header</h3>
+		<p>The header will stick to the top when you reach its scroll position.</p>
+		<p>Scroll back up to remove the sticky effect.</p>  
+	</div> -->
+
+	<div class="intro content">
+		<h1>Hedwig <span id="anim">Chat Bot</span></h1>
+		<br>
+		<p style="word-spacing: 3px;font-size: 22px;">I am Hedwig<br>I am here to make your life easier and Healthy<br>You can have some real fun with me</p>
+		<br>
+	</div>
+	<span>
+		<img class = "intro-image" src="https://images.unsplash.com/photo-1589254066007-898d52d910d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80">
+	</span>
+	
+
+	<!-- <div>
+		<img style="margin-bottom: 140%" src="https://thumbs.dreamstime.com/t/hand-drawn-robot-funny-childish-drawn-robot-dark-background-115559902.jpg">
+	</div> -->
+
+	<div>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+		<p>Hello Everyone this is a chatbot.</p>
+	</div>
+	<div id="chat-circle" class="btn btn-raised">
+	      <div id="chat-overlay"></div>
+	      <img style = "margin-top: -37%; margin-left: -30%;" src = "{{ url_for('static', filename='additional_files/iconr.png') }}"/>
+	</div>
+
+	<div class="chat-box">
+	  <div class="chat-box-header">
+	    ChatBot
+	    <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+	  </div>
+	  <div class="chat-box-body">
+	    <div class="chat-box-overlay">   
+	    </div>
+
+	    <div class="chat-logs">
+	     
+	    </div><!--chat-log -->
+	  </div>
+	  <div class="chat-input">   
+	    <form>
+	      <input type="text" id="chat-input" placeholder="Send a message..."/>
+	    <button type="submit" class="chat-submit" id="chat-submit"><img style = "margin-top: 20%; margin-left: -20%; width: inherit;" src = "additional_files/send.png"></button>
+	    </form>      
+	  </div>
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+	    header.classList.add("sticky");
+	  } else {
+	    header.classList.remove("sticky");
+	  }
+	}
+	</script>
+	<script src="{{ url_for('static', filename='js/popup.js') }}"> </script>
+</body>
+</html>
